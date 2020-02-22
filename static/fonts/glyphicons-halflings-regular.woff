@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Zzm317">
+<title>404 - Page Not Found - World Door</title>
+
+<link href="/templates/Space/assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="/templates/Space/assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="/templates/Space/assets/css/style.css" rel="stylesheet">
+<link href="/templates/Space/assets/css/default.css" rel="stylesheet" />
+<link href="/templates/Space/assets/css/switchery.min.css" rel="stylesheet" />
+<link href="/templates/Space/assets/css/nv.d3.min.css" rel="stylesheet">
+
+<link href="/templates/Space/assets/css/space.min.css" rel="stylesheet">
+<link href="/templates/Space/assets/css/custom.css" rel="stylesheet">
+<link href="/templates/Space/assets/css/other.css" rel="stylesheet">
+<link href="/templates/Space/assets/css/intlTelInput.css" rel="stylesheet">
+
+
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+<script src="/templates/Space/assets/js/jquery-3.1.0.min.js"></script>
+<script src="/templates/Space/assets/js/bootstrap.min.js"></script>
+<script src="/templates/Space/assets/js/jquery.slimscroll.min.js"></script>
+<script src="/templates/Space/assets/js/jquery.uniform.standalone.js"></script>
+<script src="/templates/Space/assets/js/switchery.min.js"></script>
+<script src="/templates/Space/assets/js/d3.min.js"></script>
+<script src="/templates/Space/assets/js/nv.d3.min.js"></script>
+<script src="/templates/Space/assets/js/jquery.flot.min.js"></script>
+<script src="/templates/Space/assets/js/jquery.flot.time.min.js"></script>
+<script src="/templates/Space/assets/js/jquery.flot.symbol.min.js"></script>
+<script src="/templates/Space/assets/js/jquery.flot.resize.min.js"></script>
+<script src="/templates/Space/assets/js/jquery.flot.tooltip.min.js"></script>
+<script src="/templates/Space/assets/js/jquery.flot.pie.min.js"></script>
+<script src="/templates/Space/assets/js/chart.min.js"></script>
+<script src="/templates/Space/assets/js/space.min.js"></script>
+<script src="/templates/Space/assets/js/lightslider.js"></script>
+<script src="/templates/Space/assets/js/dashboard.js"></script>
+<script src="/templates/Space/assets/js/whmcs.js"></script>
+<script src="/templates/Space/assets/js/intlTelInput.min.js"></script>
+<script src="/templates/Space/assets/js/utils.js"></script>
+<script src="/templates/Space/assets/js/clipboard.min.js"></script>
+<script type="text/javascript">
+            var csrfToken = 'aaf4cff8cd775cf0362eac600c43c5d8d8a0cec0',
+                markdownGuide = 'Markdown 使用教程',
+                locale = 'en',
+                saved = '已保存',
+                saving = '自动保存';
+        </script>
+</head>
+<body>
+
+<div class="page-container">
+
+<div class="page-sidebar">
+<a class="logo-box" href="index.php">
+<span>World Door</span>
+<i class="icon-close" id="sidebar-toggle-button-close"></i>
+</a>
+<div class="page-sidebar-inner">
+<div class="page-sidebar-menu">
+<ul class="accordion-menu">
+<li>
+<a href="/index.php">
+<i class="menu-icon fa fa-home"></i>
+<span>用户中心</span>
+</a>
+</li>
+<li>
+<a href="javascript:void(0)">
+<i class="menu-icon fa fa-shopping-cart"></i>
+<span>在线购买</span>
+<i class="accordion-icon fa fa-angle-left"></i> </a>
+<ul class="sub-menu">
+<li id="Primary_Navbar-Store-Browse_Products_Services">
+<a href="/cart.php">
+浏览全部
+</a>
+</li>
+<li id="Primary_Navbar-Store-世界之门">
+<a href="/cart.php?gid=1">
+世界之门
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/announcements">
+<i class="menu-icon fa fa-bullhorn"></i>
+<span>公告信息</span>
+</a>
+</li>
+<li>
+<a href="/knowledgebase">
+<i class="menu-icon fa fa-comment"></i>
+<span>帮助中心</span>
+</a>
+</li>
+<li>
+<a href="/serverstatus.php">
+<i class="menu-icon fa fa-server"></i>
+<span>服务监控</span>
+</a>
+</li>
+<li>
+<a href="/affiliates.php">
+<i class="menu-icon fa fa-universal-access"></i>
+<span>用户推广</span>
+</a>
+</li>
+<li>
+<a href="/contact.php">
+<i class="menu-icon fa fa-globe"></i>
+<span>联系我们</span>
+</a>
+</li>
+<li class="menu-divider"></li>
+<li>
+<a href="/login.php">
+<i class="menu-icon fa fa-sign-in"></i>
+<span class="menu-text">用户登录</span>
+</a>
+</li>
+<li>
+<a href="/register.php">
+<i class="menu-icon fa fa-user"></i>
+<span class="menu-text">注册账户</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="page-content">
+
+<div class="page-header">
+<div class="search-form">
+<form method="post" action="clientarea.php?action=kbsearch">
+<input type="hidden" name="token" value="aaf4cff8cd775cf0362eac600c43c5d8d8a0cec0" />
+<div class="input-group">
+<input type="text" name="search" class="form-control search-input" placeholder="在此处输入问题寻找答案…">
+<span class="input-group-btn">
+<button class="btn btn-default" id="close-search" type="button"><i class="icon-close"></i></button>
+</span>
+</div>
+</form>
+</div>
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+
+<div class="navbar-header">
+<div class="logo-sm">
+<a href="javascript:void(0)" id="sidebar-toggle-button"><i class="fa fa-bars"></i></a>
+</div>
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<i class="fa fa-angle-down"></i>
+</button>
+</div>
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="fa fa-bars"></i></a></li>
+<li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="fa fa-expand"></i></a></li>
+<li><a href="javascript:void(0)" id="search-button"><i class="fa fa-search"></i></a></li>
+ </ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe"></i></a>
+<ul class="dropdown-menu dropdown-lg dropdown-content">
+<li class="drop-title">选择语言</li>
+<li class="slimscroll dropdown-notifications">
+<ul class="list-unstyled dropdown-oc">
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=arabic">
+<span class="notification-info">العربية
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=azerbaijani">
+<span class="notification-info">Azerbaijani
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=catalan">
+<span class="notification-info">Català
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=chinese-cn">
+<span class="notification-info">中文
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=chinese-tw">
+<span class="notification-info">中文
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=croatian">
+<span class="notification-info">Hrvatski
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=czech">
+<span class="notification-info">Čeština
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=danish">
+<span class="notification-info">Dansk
+</span></a>
+</li>
+ <li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=dutch">
+<span class="notification-info">Nederlands
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=english">
+<span class="notification-info">English
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=estonian">
+<span class="notification-info">Estonian
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=farsi">
+<span class="notification-info">Persian
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=french">
+<span class="notification-info">Français
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=german">
+<span class="notification-info">Deutsch
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=hebrew">
+<span class="notification-info">עברית
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=hungarian">
+<span class="notification-info">Magyar
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=italian">
+<span class="notification-info">Italiano
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=macedonian">
+<span class="notification-info">Macedonian
+ </span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=norwegian">
+<span class="notification-info">Norwegian
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=portuguese-br">
+<span class="notification-info">Português
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=portuguese-pt">
+<span class="notification-info">Português
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=romanian">
+<span class="notification-info">Română
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=russian">
+<span class="notification-info">Русский
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=spanish">
+<span class="notification-info">Español
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=swedish">
+<span class="notification-info">Svenska
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=turkish">
+<span class="notification-info">Türkçe
+</span></a>
+</li>
+<li>
+<a href="/templates/Space/assets/css/fonts/glyphicons-halflings-regular.woff? language=ukranian">
+<span class="notification-info">Українська
+</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"></i></a>
+<ul class="dropdown-menu dropdown-lg dropdown-content">
+<li class="drop-title">通知</li>
+<li class="slimscroll dropdown-notifications">
+<ul class="list-unstyled dropdown-oc">
+<li>
+<a href="#"><span class="notification-badge bg-primary"><i class="fa fa-check-circle"></i></span>
+<span class="notification-info">目前没有新通知。
+</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown user-dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="//cn.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=64&d=https://worldoor.club//templates/Space/assets/img/avatar1.jpg" alt="" class="img-circle"></a>
+<ul class="dropdown-menu">
+<li><a href="/login.php">用户登录</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+
+<div class="page-inner">
+<div class="page-title">
+<h3 class="breadcrumb-header">404 - Page Not Found</h3>
+</div>
+<div id="main-wrapper">
+<div class="row">
+<div class="col-sm-12">
+<div class="panel panel-default panel-table">
+<div class="panel-body">
+<div class="alert alert-danger">
+<strong><i class="fa fa-times-circle"></i>
+天哪！, 我们无法找到该页面</strong>
+</div>
+<p class="text-center">
+请尝试使用以下选项<br>
+<br>
+<a href="index.php" class="btn btn-default">主页</a>
+<a href="contact.php" class="btn btn-default">联系支持</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="page-footer">
+<p>Made with <i class="fa fa-heart"></i> by World Door</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
